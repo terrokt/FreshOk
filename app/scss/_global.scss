@@ -1,0 +1,27 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #333333;
+  background-color: #fff;
+}
+
+.lock {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: $dark-900;
+  text-transform: uppercase;
+}

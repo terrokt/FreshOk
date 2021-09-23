@@ -1,18 +1,108 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Ruda:wght@600;900&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Document</title>
+  <title>ФрешОк</title>
 </head>
+
+<!-- Понимаю что двойное вложение в классах лучше не использовать, но мне не хватает фантазии, придумать индивидуальные классы) -->
+
 <body>
-  <header class="header"></header>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+
+        <nav class="header__navigation">
+
+          <div class="header__links">
+            <a class="header__links-link header__links-link--delivery" href="#">адрес и время доставки</a>
+            <a class="header__links-link header__links-link--phone" href="#">горячая линия 24/7</a>
+          </div>
+
+          <ul class="header__navigation-list">
+            <li class="header__navigation-item">
+              <a class="header__navigation-link" href="#">
+                доставка
+              </a>
+            </li>
+
+            <li class="header__navigation-item">
+              <a class="header__navigation-link" href="#">
+                о нас
+              </a>
+            </li>
+
+            <li class="header__navigation-item">
+              <a class="header__navigation-link" href="#">
+                новости
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+      </div>
+    </div>
+
+    <div class="header__content">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <img src="./images/logo.png" alt="" class="logo__img">
+          </a>
+
+          <button class="header__btn">Kаталог продуктов</button>
+
+          <form class="header__form">
+            <input type="search" class="header__search" placeholder="Найти в магазине ...">
+
+            <button type="submit" class="header__form-btn">поиск</button>
+
+          </form>
+
+          <ul class="header__user">
+            <li class="header__item">
+              <a class="header__link" href="#">
+                <img class="header__icon" src="images/icons/user-link.svg" alt="">
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">
+                <img class="header__icon" src="images/icons/icon-heart.svg" alt="">
+                <span class="header__count">12</span>
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">
+                <img class="header__icon" src="images/icons/icon-cart.svg" alt="">
+                <span class="header__count">12</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
   <main class="main">
     <section class="section"></section>
   </main>
   <footer class="footer"></footer>
   <script src="js/main.min.js"></script>
 </body>
+
 </html>

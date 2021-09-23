@@ -48,6 +48,12 @@ select {
   font: inherit;
 }
 
+input {
+  padding: 0;
+  border: 0;
+  outline: transparent;
+}
+
 a {
   color: inherit;
   text-decoration: none;
