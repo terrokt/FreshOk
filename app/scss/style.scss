@@ -260,7 +260,7 @@
 
   &__arrow{
     position: absolute;
-    top: 45%;
+    top: 37%;
     width: 60px;
     height: 60px;
     background-color: rgba($white, 0.8);
@@ -289,6 +289,58 @@
       right: 31%;
       background-image: url(../images/icons/icon-arrow-right.svg);
     }
+  }
+
+  &__advantages{
+    padding-top: 48px;
+    padding-bottom: 30px;
+    background-color: $silver-100;
+  }
+
+  &__advantages-list{
+    display: flex;
+    justify-content: center;
+  }
+
+  &__advantages-item{
+    max-width: 265px;
+    width: 100%;
+    padding-left: 75px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      @extend %bg-set;
+      width: 50px;
+      height: 50px;
+    }
+
+    &:first-child{
+      &::before{
+        background-image: url(../images/hero/scooter.svg);
+      }
+    }
+    &:nth-child(2){
+      &::before{
+        background-image: url(../images/hero/folder.svg);
+      }
+    }
+    &:last-child{
+      &::before{
+        background-image: url(../images/hero/day.svg);
+      }
+    }
+
+    &:not(:last-child){
+      margin-right: 65px;
+    }
+  }
+
+  &__advantages-title{
+    font-weight: 600;
+    margin-bottom: 6px;
   }
 }
 
