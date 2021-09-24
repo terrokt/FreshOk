@@ -4,4 +4,5 @@ $(function () {
     nextArrow: $('.hero__arrow-next'),
     autoplay: true, 
   });
+  var mixer = mixitup('.products__list');
 });
