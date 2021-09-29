@@ -1,5 +1,5 @@
 html,
-body{
+body {
   height: 100%;
 }
 
@@ -41,7 +41,7 @@ body {
 }
 
 .section {
-  padding: 72px 0;
+  margin-bottom: 72px;
 }
 
 .btn {
@@ -54,11 +54,211 @@ body {
   border: 1px solid transparent;
   border-radius: 6px;
   transition: background-color 0.3s;
+
   &:hover {
     background-color: darken($green-900, 10%);
   }
-  &:active{
+
+  &:active {
     box-shadow: inset 0px 10px 4px rgba(0, 0, 0, 0.1);
   }
 }
 
+.header__logo{
+  margin-right: 24px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+
+  &__btn {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 0;
+      height: 3px;
+      background-color: #E0EDCF;
+      transition: width 0.3s;
+    }
+  }
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  border: 1px solid #e7e7e7;
+  border-radius: 6px;
+  padding-top: 60px;
+  padding-bottom: 18px;
+  transition: border-color 0.2s;
+  max-width: 300px;
+  width: 100%;
+  height: 410px;
+
+  &:hover {
+    border-color: $green-900;
+  }
+
+  &__top {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 12px 7px 12px;
+  }
+
+
+
+  &__like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 17px;
+    right: 12px;
+    max-width: 32px;
+    width: 100%;
+    height: 29px;
+  }
+
+  &__heart {
+    transition: fill 0.3s;
+
+    &:hover {
+      fill: $orange-900;
+    }
+  }
+
+  &__image {
+    max-width: 300px;
+    width: 100%;
+    height: 215px;
+    margin-bottom: 18px;
+  }
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+
+
+  &__info {
+    padding: 18px;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 600;
+    color: $dark-900;
+    margin-bottom: auto;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 21px;
+    padding-right: 18px;
+
+  }
+
+  &__prices {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__price {
+    line-height: 1;
+  }
+
+  &__price--old {
+    color: $silver-200;
+  }
+
+  &__buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: $green-900;
+    border-radius: 3px;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-image: url(../images/icons/icon-cart.svg);
+      @extend %bg-set;
+    }
+  }
+}
+
+.badges {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 12px;
+  padding-left: 12px;
+}
+
+.badge {
+  display: block;
+  padding: 3px 6px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  color: $white;
+  border-radius: 6px;
+  letter-spacing: 0.3px;
+  line-height: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  &--new {
+    background-color: $green-900;
+  }
+
+  &--sale {
+    background-color: $red-900;
+  }
+
+  &--hit {
+    background-color: $orange-900;
+  }
+}
