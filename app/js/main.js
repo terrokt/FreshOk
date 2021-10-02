@@ -10,7 +10,15 @@ $(function () {
     $('.header__btn').toggleClass('header__btn--active');
   });
 
-  
+  $('.header__link').on('click', function () {
+    $('.cart').toggleClass('cart--active');
+  });
+
+  $('.cart__close').on('click', function () {
+    $('.cart').removeClass('cart--active');
+  });
+
+  // Открытие закрытие меню
   $(document).mouseup(function (e){ // событие клика по веб-документу
     var div = $(".menu__list"); // Элемент, клик по которому не должен приводить к закрытию. 
     if (!div.is(e.target) // если клик был не по нашему блоку
@@ -19,9 +27,30 @@ $(function () {
        $('.header__btn').removeClass('header__btn--active');
     }
   });
+// Функция счетчика товаров в корзине
+  $(function() {
 
+    (function quantityProducts() {
+      var $quantityArrowMinus = $(".cart__min");
+      var $quantityArrowPlus = $(".cart__plus");
+      var $quantityNum = $(".cart__num");
   
-
+      $quantityArrowMinus.click(quantityMinus);
+      $quantityArrowPlus.click(quantityPlus);
+  
+      function quantityMinus() {
+        if ($quantityNum.val() > 1) {
+          $quantityNum.val(+$quantityNum.val() - 1);
+        }
+      }
+  
+      function quantityPlus() {
+        $quantityNum.val(+$quantityNum.val() + 1);
+      }
+    })();
+  
+  });
+// Множественный mixItUp
   var containerEl1 = document.querySelector('[data-ref="container-1"]');
   var containerEl2 = document.querySelector('[data-ref="container-2"]');
  
@@ -30,7 +59,7 @@ $(function () {
       scope: 'local'
     }
   };
- 
+
   var mixer1 = mixitup(containerEl1, config);
   var mixer2 = mixitup(containerEl2, config);
 

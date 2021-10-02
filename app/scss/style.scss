@@ -4,6 +4,9 @@
 @import 'global';
 
 
+
+
+
 .header {
   &__top {
     background-color: $dark-800;
@@ -184,7 +187,7 @@
   }
 }
 
-.info {
+.links {
   display: flex;
 
   &__item {
@@ -495,7 +498,7 @@
     margin-bottom: 48px;
     text-align: left;
   }
-} 
+}
 
 .brands {
   &__list {
@@ -528,11 +531,12 @@
 
 .news {
 
-  &__top{
+  &__top {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   &__title {
     text-align: left;
   }
@@ -596,12 +600,14 @@
     font-size: 30px;
     font-weight: 600;
   }
-  &__btn{
+
+  &__btn {
     position: relative;
     color: $green-900;
     font-weight: 700;
     padding-bottom: 8px;
-    border-bottom: 2px solid $green-900; 
+    border-bottom: 2px solid $green-900;
+
     // &::after{
     //   content: '';
     //   position: absolute;
@@ -611,7 +617,7 @@
     //   height: 2px;
     //   background-color: $green-900;
     // }
-    &:hover{
+    &:hover {
       color: darken($green-900, 15%);
       border-color: darken($green-900, 15%);
 
@@ -628,16 +634,16 @@
     display: block;
     margin-bottom: 30px;
   }
-}
 
-.footer-top {
-  &__content {
+  &__inner {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 30px;
   }
+}
 
+.sub {
   &__label {
     display: block;
     margin-bottom: 18px;
@@ -646,7 +652,6 @@
   &__inner {
     display: flex;
     justify-content: center;
-
   }
 
   &__input {
@@ -681,11 +686,11 @@
       outline: 3px solid rgba($green-900, 0.5);
     }
   }
+}
 
-  &__list {
-    column-count: 3;
-    column-gap: 75px;
-  }
+.nav {
+  column-count: 3;
+  column-gap: 75px;
 
   &__item {
     margin-bottom: 18px;
@@ -698,25 +703,23 @@
       color: rgba($white, 0.7);
     }
   }
+}
 
-  &__info {
-    display: flex;
-    flex-direction: column
-  }
-
-
+.info {
+  display: flex;
+  flex-direction: column;
 
   &__help {
     margin-bottom: 18px;
     transition: color 0.3s;
 
-    &:hover {
+    :hover {
       color: rgba($white, 0.7);
     }
   }
 }
 
-.footer-bottom {
+.copyright {
   border-top: 1px solid rgba($white, 0.1);
   padding: 24px 0;
 
@@ -726,7 +729,7 @@
     align-items: center;
   }
 
-  &__copy {
+  &__text {
     text-transform: uppercase;
   }
 
@@ -741,12 +744,5 @@
     }
   }
 }
-
-
-
-
-
-
-
 
 @import 'media';
