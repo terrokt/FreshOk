@@ -1,7 +1,7 @@
 $(function () {
   $('.hero__baner').slick({
-    prevArrow: $('.hero__arrow-prev'),
-    nextArrow: $('.hero__arrow-next'),
+    prevArrow: $('.hero__arrow--prev'),
+    nextArrow: $('.hero__arrow--next'),
     autoplay: true,
   });
 
@@ -10,7 +10,7 @@ $(function () {
     $('.header__btn').toggleClass('header__btn--active');
   });
 
-  $('.header__link').on('click', function () {
+  $('.user-nav__item--cart').on('click', function () {
     $('.cart').toggleClass('cart--active');
   });
 

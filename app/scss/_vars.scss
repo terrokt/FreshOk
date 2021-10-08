@@ -12,15 +12,21 @@ $silver-600: #e7c5c5;
 
 $red-900: #CF3E3B;
 
-$orange-900: #FF7A00; 
+$orange-900: #FF7A00;
 
 $yellow-900: #FFB800;
 
 
-$white: #FFFFFF; 
+$white: #FFFFFF;
 
 %bg-set {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

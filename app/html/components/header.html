@@ -1,0 +1,275 @@
+<header class="header">
+  <nav class="header__top">
+    <div class="container">
+
+      <div class="header__inner">
+
+        <ul class="header__links links">
+          <li class="links__item">
+            <a class="links__link links__link--delivery" href="#">
+              адрес и время доставки
+            </a>
+          </li>
+          <li class="links__item">
+            <a class="links__link links__link--phone" href="#">
+              горячая линия 24/7
+            </a>
+          </li>
+        </ul>
+
+        <ul class="header__navigation navigation">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">
+              доставка
+            </a>
+          </li>
+
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">
+              о нас
+            </a>
+          </li>
+
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">
+              новости
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <nav class="header__content">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo header__logo" href="#">
+          <svg class="logo__img">
+            <use href="images/sprite.svg#logo">
+            </use>
+          </svg>
+        </a>
+        <div class="menu">
+          <button class="header__btn" type="button">Kаталог продуктов</button>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Овощи и фрукты
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Бакалея
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Молочные продукты
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Хлеб
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Мясо
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Колбаса
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Рыба
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Алкоголь
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Напитки
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Торты
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Мясо
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Чай, кофе
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
+        <form class="header__form">
+          <label class="sr-only" for="header-search">Поиск по сайту </label>
+          <input class="header__search" type="search" id="header-search" name="header__search"
+            placeholder="Найти в магазине ..." required>
+
+          <button class="header__form-btn" type="submit">поиск</button>
+
+        </form>
+
+        <div class="user-nav">
+
+            <a class="user-nav__item user-nav__link" href="#">
+              <svg class="user-nav__icon user-nav__icon--user">
+                <use href="images/sprite.svg#icon-user"></use>
+              </svg>
+            </a>
+       
+            <button class="user-nav__item" type="button">
+              <svg class="user-nav__icon user-nav__icon--like">
+                <use href="images/sprite.svg#icon-heart"></use>
+              </svg>
+              <span class="user-nav__count">12</span>
+            </button>
+         
+            <button class="user-nav__item user-nav__item--cart" type="button">
+              <svg class="user-nav__icon user-nav__icon--cart">
+                <use href="images/sprite.svg#cart-link"></use>
+              </svg>
+            </button>
+          </div>
+
+        <div class="cart">
+          <div class="cart__top">
+            <p class="cart__description">Корзина </p>
+            <button class="cart__button" type="button">очистить корзину</button>
+            <button class="cart__close" type="button">
+              <span class="cart__close-line"></span>
+            </button>
+          </div>
+          <ul class="cart__list">
+            <li class="cart__item">
+              <div class="cart__product">
+                <div class="cart__info-wrapper">
+                  <img class="cart__img" src="images/cart/pineapple.jpg" alt="Ананас" width="60" height="60">
+                  <div class="cart__info">
+                    <p class="cart__info-title">Ананас, 1 кг</p>
+                    <p class="cart__info-price">999₽ </p>
+                  </div>
+                </div>
+                <div class="cart__count-wrapper">
+                  <div class="cart__count">
+                    <button class="cart__min">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M15.3333 7.33331H0.666679C0.298476 7.33331 0 7.63179 0 8C0 8.36821 0.298476 8.66669 0.666679 8.66669H15.3333C15.7015 8.66669 16 8.36821 16 8C16 7.63179 15.7015 7.33331 15.3333 7.33331Z"
+                            fill="white" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="16" height="16" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                    </button>
+                    <input class="cart__num" type="number" value="1">
+                    <button class="cart__plus">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M15.2 7.2H8.80005V0.799951C8.80005 0.358447 8.4416 0 7.99995 0C7.55845 0 7.2 0.358447 7.2 0.799951V7.2H0.799951C0.358447 7.2 0 7.55845 0 7.99995C0 8.4416 0.358447 8.80005 0.799951 8.80005H7.2V15.2C7.2 15.6416 7.55845 16 7.99995 16C8.4416 16 8.80005 15.6416 8.80005 15.2V8.80005H15.2C15.6416 8.80005 16 8.4416 16 7.99995C16 7.55845 15.6416 7.2 15.2 7.2Z"
+                            fill="white" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="16" height="16" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                    </button>
+                  </div>
+                  <span class="cart__count-total">
+                    1998₽
+                  </span>
+                </div>
+              </div>
+
+            </li>
+
+            <li class="cart__item">
+              <div class="cart__product">
+                <div class="cart__info-wrapper">
+                  <img class="cart__img" src="images/cart/dragon-fruit.jpg" alt="Ананас" width="60" height="60">
+                  <div class="cart__info">
+                    <p class="cart__info-title">Питахайя красная с белой мякотью, 1шт</p>
+                    <p class="cart__info-price">1019₽ </p>
+                  </div>
+                </div>
+                <div class="cart__count-wrapper">
+                  <div class="cart__count">
+                    <button class="cart__min">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M15.3333 7.33331H0.666679C0.298476 7.33331 0 7.63179 0 8C0 8.36821 0.298476 8.66669 0.666679 8.66669H15.3333C15.7015 8.66669 16 8.36821 16 8C16 7.63179 15.7015 7.33331 15.3333 7.33331Z"
+                            fill="white" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="16" height="16" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                    </button>
+                    <input class="cart__num" type="number" value="1">
+                    <button class="cart__plus">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M15.2 7.2H8.80005V0.799951C8.80005 0.358447 8.4416 0 7.99995 0C7.55845 0 7.2 0.358447 7.2 0.799951V7.2H0.799951C0.358447 7.2 0 7.55845 0 7.99995C0 8.4416 0.358447 8.80005 0.799951 8.80005H7.2V15.2C7.2 15.6416 7.55845 16 7.99995 16C8.4416 16 8.80005 15.6416 8.80005 15.2V8.80005H15.2C15.6416 8.80005 16 8.4416 16 7.99995C16 7.55845 15.6416 7.2 15.2 7.2Z"
+                            fill="white" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="16" height="16" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                    </button>
+                  </div>
+                  <span class="cart__count-total">
+                    2038₽ 
+                  </span>
+                </div>
+              </div>
+
+            </li>
+
+          </ul>
+          <div class="cart__buy">
+            <div class="cart__buy-inner">
+              <p class="cart__buy-text">Товаров на сумму</p>
+              <span class="cart__buy-total">2038₽ </span>
+            </div>
+            <a class="cart__done" href="#" >Оформить заказ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
